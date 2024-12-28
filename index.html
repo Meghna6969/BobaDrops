@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>chillChristmas</title>
+
+
+<br>
+<style>
+    .GuyPosition{
+       padding-left: 35%;
+    }
+    .snowPosition{
+        position:fixed;
+        right:0%;
+    }
+    .audioPosition{
+        position:fixed;
+        right:84%;
+        bottom: 92%;
+    }
+    .chillOut{
+        left:50%;
+    }
+    .snowFlake{
+        position:fixed;
+        top: -10px;
+        color:white;
+        font-size: 1em;
+        user-select:none;
+        pointer-events: none;
+        animation:fall linear infinite;
+    }
+    @keyframes fall{
+        to{
+            transform: translateY(100vh);
+        }
+    }
+    
+</style>
+</head>
+<body style="background-color: rgb(2, 2, 70);">
+    <h1 style="color: aliceblue; font-size: 50px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; ">
+        R u having a chill Christmas?
+    </h1>
+    <h1 style="color: aliceblue; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;" class="chillOut"> chill out with this music ☺</h1>
+
+    <div class="snowFlake" style="left: 10%; animation-duration: 9s;">❄</div>
+    <div class="snowFlake" styly="left: 20%; animation-duration: 12s;">❄</div>
+    <div class="snowFlake" style="left: 30%; animation-duration: 8s;">❄</div>
+    <div class="snowFlake" style="left: 40%; animation-duration: 18s;">❄</div>
+    <div class="snowFlake" style="left: 50%; animation-duration: 11s;">❄</div>
+    <div class="snowFlake" style="left: 60%; animation-duration: 21s;">❄</div>
+    <div class="snowFlake" style="left: 70%; animation-duration: 10s;">❄</div>
+    <div class="snowFlake" style="left: 80%; animation-duration: 12s;">❄</div>
+    <div class="snowFlake" style="left: 90%; animation-duration: 20s;">❄</div>
+    <div class="snowFlake" style="left: 100%; animation-duration: 10s;">❄</div>
+    <div class="snowFlake" style="left: 110%; animation-duration: 15s;">❄</div>
+     <div class="snowFlake" style="left: 10.5%; animation-duration: 15s;">❄</div>
+    <div class="snowFlake" styly="left: 20.5%; animation-duration: 21s;">❄</div>
+    <div class="snowFlake" style="left: 30.5%; animation-duration: 22s;">❄</div>
+    <div class="snowFlake" style="left: 40.5%; animation-duration: 23s;">❄</div>
+    <div class="snowFlake" style="left: 50%.5; animation-duration: 24s;">❄</div>
+    <div class="snowFlake" style="left: 60.5%; animation-duration: 25s;">❄</div>
+    <div class="snowFlake" style="left: 70.5%; animation-duration: 15.6s;">❄</div>
+    <div class="snowFlake" style="left: 80.5%; animation-duration: 29s;">❄</div>
+    <div class="snowFlake" style="left: 90.5%; animation-duration: 30s;">❄</div>
+    <div class="snowFlake" style="left: 100.5%; animation-duration: 10s;">❄</div>
+    <div class="snowFlake" style="left: 110.5%; animation-duration: 15s;">❄</div>
+    <br>
+    <a href="chill-guy.mp3" class="GuyPosition">
+        <img src="chillGuy.png" width="500px" height="500px">
+    </a>
+    <img src="snow.png" width="2000px" height="750px" class="snowPosition">
+
+    <!-- Add audio element -->
+    <audio id="chillMusic" src="chill-guy.mp3" controls class="audioPosition"></audio>
+
+</body>
+</html>
